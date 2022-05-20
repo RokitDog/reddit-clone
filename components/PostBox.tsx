@@ -128,7 +128,7 @@ function PostBox({ subreddit }: Props) {
 
   return (
     <form
-      className="sticky top-16 z-50 rounded-md border border-gray-300 bg-white p-2"
+      className="sticky top-20 z-50 rounded-md border border-gray-300 bg-white p-2"
       onSubmit={onSubmit}
     >
       <div className="flex items-center space-x-3">
