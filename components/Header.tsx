@@ -16,18 +16,21 @@ import {
   VideoCameraIcon,
 } from '@heroicons/react/outline'
 import { signIn, signOut, useSession } from 'next-auth/react'
+import Link from 'next/link'
 
 function Header() {
   const { data: session } = useSession()
 
   return (
-    <div className="sticky top-0 z-50 flex bg-white px-4 py-2 shadow-sm">
+    <div className="sticky top-0 z-50 flex items-center bg-white px-4 py-2 shadow-sm">
       <div className="relative h-10 w-20 flex-shrink-0 cursor-pointer">
-        <Image
-          src="https://links.papareact.com/fqy"
-          layout="fill"
-          objectFit="contain"
-        />
+        <Link href="/">
+          <Image
+            src="https://links.papareact.com/fqy"
+            layout="fill"
+            objectFit="contain"
+          />
+        </Link>
       </div>
 
       <div className="mx-7 flex items-center xl:min-w-[300px]">
